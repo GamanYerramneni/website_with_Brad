@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sony - Explore Innovation</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff; /* Light blue background */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #2196f3; /* Sony blue */
+      color: #fff;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 150px; /* Increase header height */
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
+    }
+
+    nav {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase; /* Convert nav text to uppercase */
+      transition: all 0.3s ease-in-out; /* Add smooth hover transition */
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+      color: #00bcd4; /* Change hover color for contrast */
+    }
+
+    /* Search button styles */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .search-bar button {
+      background-color: #2196f3;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .search-bar button:hover {
+      background-color: #00bcd4;
+    }
+
+    /* Product section styles */
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .product {
+      width: 30%;
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      line-height: 1.5;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #2196f3;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .social-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 20%;
+    }
+
+    footer .social-icons a {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    footer .social-icons a:hover {
+      opacity: 0.8;
+    }
+
+    /* Dark mode toggle styles */
+    .dark-mode-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .dark-mode-toggle input[type="checkbox"] {
+      display: none;
+    }
+
+    .dark-mode-toggle label {
+      color: #fff;
+      margin-right: 5px;
+    }
+
+    .dark-mode-toggle span {
+      display: block;
+      width: 50px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: #4CAF50; /* Green for light mode */
+      transition: all 0.3s ease-in-out;
+    }
+
+    .dark-mode-toggle span::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fff; /* White circle for light mode */
+      transition: all 0.3s ease-in-out;
+    }
+
+    .dark-mode-toggle input[type="checkbox"]:checked + span {
+      background-color: #616161; /* Gray for dark mode */
+    }
+
+    .dark-mode-toggle input[type="checkbox"]:checked + span::after {
+      transform: translateX(25px); /* Move circle for dark mode */
+    }
+
+    /* Additional product information */
+    .product-more-info {
+      display: none;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .product:hover .product-more-info {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Sony</div>
+    <nav>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">About Us</a></li>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Sony Products">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div id="product-slider">
+      </div>
+  </section>
+
+  <section class="container">
+    <h2>Explore Our Latest Products</h2>
+    <div class="product-section">
+      <div class="product">
+        <img src="images/bravia.jpg" alt="Sony Bravia TV">
+        <h3>Bravia TV</h3>
+        <p>Experience stunning visuals...</p>
+        <div class="product-more-info">
+          <p>Learn more about cutting-edge display technology and immersive viewing experiences.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/wh1000xm5.jpg" alt="Sony WH-1000XM5 Headphones">
+        <h3>WH-1000XM5 Headphones</h3>
+        <p>Lose yourself in uninterrupted sound...</p>
+        <div class="product-more-info">
+          <p>Discover industry-leading noise cancellation and focus on your music without distractions.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/alpha7iv.jpg" alt="Sony Alpha 7 IV Mirrorless Camera">
+        <h3>Alpha 7 IV Mirrorless Camera</h3>
+        <p>Capture stunning photos and videos...</p>
+        <div class="product-more-info">
+          <p>Elevate your photography with a powerful full-frame
+        sensor and advanced autofocus capabilities.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/playstation5.jpg" alt="Sony PlayStation 5">
+        <h3>PlayStation 5</h3>
+        <p>Experience next-generation gaming...</p>
+        <div class="product-more-info">
+          <p>Enjoy lightning-fast loading times, stunning visuals, and immersive haptic feedback.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/linkbuds.jpg" alt="Sony LinkBuds">
+        <h3>LinkBuds</h3>
+        <p>Stay connected to your world...</p>
+        <div class="product-more-info">
+          <p>Enjoy open-ear comfort while listening to music or taking calls.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/xperia1iii.jpg" alt="Sony Xperia 1 III Smartphone">
+        <h3>Xperia 1 III Smartphone</h3>
+        <p>Capture professional-quality photos...</p>
+        <div class="product-more-info">
+          <p>Features a versatile triple-lens camera system and a stunning OLED display.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p>&copy; Sony Corporation, 2024</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a>  <a href="#"><i class="fab fa-instagram"></i></a>  </div>
+    <div class="dark-mode-toggle">
+      <label for="dark-mode-checkbox">Dark Mode:</label>
+      <input type="checkbox" id="dark-mode-checkbox">
+      <span></span>
+    </div>
+  </footer>
+
+  <script>
+  // JavaScript for image slider (replace with your slider implementation)
+
+  // Script to toggle dark mode
+  const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+
+  darkModeCheckbox.addEventListener('change', function() {
+    const body = document.body;
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+    const productSection = document.querySelector('.product-section');
+    const product = document.querySelectorAll('.product');
+
+    body.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
+    footer.classList.toggle('dark-mode');
+    productSection.classList.toggle('dark-mode');
+
+    product.forEach(item => {
+      item.classList.toggle('dark-mode');
+    });
+  });
+  </script>
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>
